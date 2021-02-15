@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<script defer type="text/javascript" src="../js/utilities.js"></script>
+	<script defer type="text/javascript" src="../js/register.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Buried Treasures</title>
+</head>
+<body>
+	<nav class="flexholder" name="navigation">
+		<ul>
+			<li><a id='home' href="../index.html">Home</a></li>
+		</ul>
+	</nav>
+
+	<form id='register-form'>
+		<div id="username-error" class="error"></div>
+		<div class="input-group">
+			<input type="text" id='username' name="username" placeholder="Username" maxlength="150" required/>
+		</div>
+		<div id="password-error" class="error"></div>
+		<div class="input-group">
+			<input type="password" id='password' name="password"  placeholder="Password"maxlength="32" required/>
+		</div>
+		<div id="facebook-error" class="error" ></div>
+		<div class="input-group">
+			<input type="text" id='facebook' name="facebook" placeholder="Facebook" minlength="10"/>
+		</div>
+		<div id="bgg-error" class="error"></div>
+		<div class="input-group">
+			<input type="text" id='boardgamegeek' name="boardgamegeek" placeholder="BGG Link:" minlength="10" required/>
+		</div>
+		<div class="input-group">
+			<input type="submit" value ="Register" />
+		</div>
+		
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buried Treasures</title>
+	<script defer type="text/javascript" src="../js/utilities.js"></script>
+	<script defer type="text/javascript" src="../js/registeroffer.js"></script>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<nav class="flexholder" name="navigation">
+		<ul>
+			<li><a id='home' href="../index.html">Home</a></li>
+			<li><a id="account-link" href="userpage.html"> My Account </a></li>
+		</ul>
+	</nav>
+	<form id="offer-form">
+		<div  class="input-group ">
+			<input type="text" id='title' name="title" placeholder="Title" maxlength="150" required/>
+		</div>
+		<div  class="input-group ">
+			<input type="number" id='price' name="price" placeholder="Price"/>
+		</div>
+		<div  class="input-group ">
+			<select id='quality' name="quality">
+                <option value="sealed">Sealed/Unopened</option>
+                <option value="new">Like New</option>
+                <option value="used">Used</option>
+                <option value="damaged">Damaged/Missing Components</option>
+            </select>
+		</div>
+		<div  class="input-group ">
+			<select id='offertype' name="offertype">
+                <option value="trade">For Trade</option>
+                <option value="sale">For Sale</option>
+				<option value="saleandtrade">For Trade & Sale</option>
+				<option value="lookingbuy">Looking To Buy</option>
+            </select>
+		</div>
+		<div id="bgg-error" class="error"></div>
+		<div  class="input-group "><input type="text" id='bgglink' name="bgglink" placeholder="BGG Link:" minlength="10" required/></div>
+		<div  class="input-group ">	<input type="text" id='comments' name="comments" placeholder="Additional Comments:"/></div>
+		<div  class="input-group ">	<input type="submit" value ="Post" /></div>
+		
+	
+	
+</body>
+</html>
